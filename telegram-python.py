@@ -1,6 +1,12 @@
 #!/usr/bin/env python
 
-input = "HauteLook is a member-only shopping website offering flash sales and limited-time sale events with top brands in women's and men's fashion."
+input = [
+    "HauteLook is a member-only shopping website",
+    "offering flash sales and limited-time",
+    "sale events with",
+    "top brands in women's and",
+    "men's fashion."
+]
 
 max_length = 16
 
@@ -19,7 +25,7 @@ expected = [
 
 def rewrap_lines(input, max_length):
     # answer here:
-    pass
+    return []
 
 if __name__ == "__main__":
     print("Telegram Problem...")
@@ -27,7 +33,7 @@ if __name__ == "__main__":
     answer = rewrap_lines(input, max_length)    
     print("Answer: %s" % answer)    
 
-    assert(len(expected) > 0)
+    assert(len(answer) > 0)
     for i in range(0, len(expected)):
         print('line [%i] answer: [%s], expected [%s]' % (i, answer[i], expected[i]))
         assert(answer[i] == expected[i])
